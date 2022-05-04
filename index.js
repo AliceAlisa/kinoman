@@ -1,6 +1,8 @@
 'use strict';
 
-const profile = document.querySelector('.profile_container');
+//const profile = document.querySelector('.profile_container');
+const profile = document.querySelector('.position_container');
+
 const collections = document.querySelector('.user_collections');
 
 function addClass() {

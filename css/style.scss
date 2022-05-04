@@ -328,7 +328,7 @@ svg:hover {
 
 .profile_container {
  
- min-width: 80%;
+  min-width: 86%;
   display: flex;
   justify-content: space-between;
  margin-top: 2%;
@@ -393,8 +393,14 @@ html {
   position: fixed;
   z-index: 20;
   top: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 auto;
+  padding: 0;
+  //margin-top: 0px;
+  //margin-right: 5%;
+  //margin-bottom: 0px;
+  //align-self: center;
+ // min-width: 84%;
+  min-width: 87%;
 }
 .collections_margin {
   margin-top: 20%;
@@ -419,5 +425,92 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
+  }
+}
+
+/*Editprofile page*/
+
+
+/*.content_box{
+  margin-bottom: -45px;
+}*/
+.editprofile_container {
+  font-weight: $font-weight;
+    font-size: 3rem;
+    margin-bottom: 10%;
+  .h3_editprof {
+    margin-top: 3%;
+    font-weight: $font-weight;
+    font-size: 3rem;
+  }
+  .edit_foto {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 300px;
+    }
+  }
+
+  .edit_profile_box {
+    margin-top: 3%;
+    padding: 2%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: $purple;
+
+    .form_input {
+      margin-bottom: 3%;
+      margin-left: 5%;
+      display: flex;
+     // justify-content: space-between;
+     .p_edit {
+       margin-right: 1%;
+     }
+     .edit_label {
+       padding-left: 1%;
+       padding-right: 8%;
+       cursor: pointer;
+     }
+     & input {
+       border-radius: 10px;
+       padding-left: 1%;
+     }
+    }
+    .radio_btn {
+      margin-right: 3%;
+      margin-top: 3%;
+      cursor: pointer;
+    }
+    .radio_input{
+      display:flex;
+      margin-left: 2%;
+     justify-content: center;
+     font-weight: 500;
+    font-size: 2.5rem;
+    
+     //align-self: stretch;
+    }
+
+    .buttons_box {
+      margin-left: 5%;
+      margin-top: 6%;
+      .form_btn{
+        font-size: 2.5rem;
+        margin-right: 8%;
+        border-radius: 20px;
+        padding: 1% 2%;
+       /* padding-left: 2%;
+        padding-right: 2%;*/
+        border: none;
+        &:hover{
+          background-color: $grey;
+          color: $white;
+          transition: all 0.8s;
+          opacity: 1;
+        }
+      }
+    }
+    
+    
   }
 }
