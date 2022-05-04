@@ -53,6 +53,9 @@ body {
     color: $white;
     transition: all 0.8s;
   }
+  .logo {
+    min-width: 140px;
+  }
 }
 
 ul {
@@ -113,6 +116,9 @@ svg:hover {
  // font-weight: 700;
   align-items: center;
   color: $grey;
+  &_list {
+    padding-left: 5px;
+  }
   &_navigation {
     height: 12.12rem;
     align-items: center;
@@ -126,6 +132,7 @@ svg:hover {
     &_search {
       align-items: center;
       position: relative;
+      padding-right: 5px;
       &:hover {
         color: $white;
         transition: all 0.8s;
@@ -321,7 +328,7 @@ svg:hover {
 
 .profile_container {
  
- min-width: 90%;
+ min-width: 80%;
   display: flex;
   justify-content: space-between;
  margin-top: 2%;
@@ -394,4 +401,23 @@ html {
 }
 .main_catalog {
   margin-top: 4.12rem;
+}
+
+@media (max-width: 1400px) {
+.user_collections {
+  img {
+    max-width: 250px;
+  }
+}
+}
+
+@media (max-width: 1100px) {
+  .main_catalog_section {
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
 }
