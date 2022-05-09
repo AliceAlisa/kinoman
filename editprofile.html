@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Nunito:wght@300;400;600&display=swap"
         rel="stylesheet" />
-    <title>Профиль пользователя</title>
+    <title>Редактировать профиль</title>
 </head>
 
 <body>
@@ -85,29 +85,39 @@
                 </div>
                 <div class="edit_profile_box">
                     <form action="#" class="form_edit">
-                        <div class="form_input">
-                            <p class="p_edit">Имя:</p>
-                            <input type="text" placeholder="First Name" />
-                        </div>
-                        <div class="form_input">
-                            <p class="p_edit">Фамилия:</p>
-                            <input type="text" placeholder="Last Name" />
-                        </div>
-                        <div class="form_input">
-                            <p class="p_edit"> Email:</p>
-                            <input type="email" placeholder="email@gmail.com" />
-                        </div>
+                        <div class="profile_info_box">
+                            <div class="label_box">
+                                <div class="form_input">
+                                    <p class="p_edit">Имя:</p>
+                                </div>
 
-                        <div class="form_input">
-                            <p class="p_edit">Профиль: </p>
-                            <div class="radio_input"><input class="radio_btn" type="radio" checked vlaue="open"
-                                    id="open" name="profile__chose"><label class="edit_label"
-                                    for="open">публичный</label> </div>
-                            <div class="radio_input"> <input class="radio_btn" type="radio" vlaue="closed" id="closed"
-                                    name="profile__chose">
-                                <label class="edit_label" for="closed">приватный</label></div>
+                                <div class="form_input">
+                                    <p class="p_edit">Фамилия:</p>
+                                </div>
 
+                                <div class="form_input">
+                                    <p class="p_edit"> Email:</p>
+                                </div>
+                                <div class="form_input">
+                                    <p class="p_edit">Профиль: </p>
 
+                                </div>
+
+                            </div>
+
+                            <div class="input_box">
+                                <input class="input_part" type="text" placeholder="First Name" />
+                                <input class="input_part" type="text" placeholder="Last Name" />
+                                <input class="input_part" type="email" placeholder="email@gmail.com" />
+                                <div class="radio_box input_part">
+                                    <div class="radio_input"><input class="radio_btn" type="radio" checked vlaue="open"
+                                            id="open" name="profile__chose"><label class="edit_label"
+                                            for="open">публичный</label> </div>
+                                    <div class="radio_input radio_input_right"> <input class="radio_btn" type="radio"
+                                            vlaue="closed" id="closed" name="profile__chose">
+                                        <label class="edit_label" for="closed">приватный</label></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="buttons_box">
                             <button class="form_btn">Сохранить</button>
@@ -115,26 +125,10 @@
                         </div>
                     </form>
                 </div>
-                <!--<div class="user_img">
-                    <a href="#">
-                        <img src="img/userfoto.svg">
-                    </a>
-                </div>
-                <div class="user_info">
-                    <h3>User Name</h3>
-                    <p>зарегистарирован 20.05.2022 </p>
-                    <p>публичный профиль</p>
-                    <p>18 просмотренных фильмов</p>
-                    <a href="#">Все коллекции</a>
-                </div>
-                <div class="profile_settings">
-                    <a href="#"> редактировать профиль</a>
-                </div>-->
             </div>
-
-
         </main>
     </div>
+
     <footer class="footer my_container flex sp_btw">
         <svg width="140" height="96" viewBox="0 0 140 96" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="140" height="96" fill="white" />
