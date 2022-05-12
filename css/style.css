@@ -275,6 +275,11 @@ svg:hover {
 .main_catalog {
   margin-top: 11.12rem;
   margin: 0 auto;
+  min-height: 40px;
+}
+
+.main_catalog .selected_film {
+  opacity: 0.6;
 }
 
 .main_catalog:last-child {
@@ -289,6 +294,7 @@ svg:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: 30px;
   /*
     column-gap: 1.25rem;
     grid-template-columns: repeat(4, 1fr);*/
@@ -297,6 +303,7 @@ svg:hover {
 .main_catalog_link {
   position: relative;
   border-radius: 10px;
+  cursor: move;
 }
 
 .main_catalog_description {
@@ -631,6 +638,13 @@ html {
   margin-right: 3%;
   margin-top: 3%;
   cursor: pointer;
+  /*:checked {
+        color: blueviolet;
+      }*/
+}
+
+.editprofile_container .edit_profile_box .radio_input input:checked + span {
+  color: blueviolet;
 }
 
 .editprofile_container .edit_profile_box .radio_input_right {

@@ -226,6 +226,10 @@ margin-bottom: 2%;
 
   margin-top: 11.12rem;
   margin: 0 auto;
+  min-height: 40px;
+  .selected_film {
+    opacity: 0.6;
+  }
   &:last-child {
     margin-bottom: 11.12rem;
   }
@@ -233,6 +237,7 @@ margin-bottom: 2%;
     margin-top: 2.12rem;
     display: flex;
     justify-content: space-between;
+    min-height: 30px;
     /*
     column-gap: 1.25rem;
     grid-template-columns: repeat(4, 1fr);*/
@@ -241,6 +246,7 @@ margin-bottom: 2%;
   &_link {
     position: relative;
     border-radius: 10px;
+    cursor: move;
   }
 
   &_description {
@@ -509,11 +515,20 @@ html {
      justify-content: center;
      font-weight: 500;
      font-size: 2.5rem;
+
       .radio_btn {
      // margin-left: 10%;
       margin-right: 3%;
       margin-top: 3%;
       cursor: pointer;
+      
+      //color: blueviolet;
+      /*:checked {
+        color: blueviolet;
+      }*/
+    }
+    input:checked+span {
+      color: blueviolet;
     }
     
      //align-self: stretch;
